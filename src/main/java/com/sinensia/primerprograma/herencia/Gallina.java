@@ -18,7 +18,7 @@ public class Gallina extends Animal implements GallinaInterfaz {
     }
 
     @Override
-    public void ponerHuevos() {
-        System.out.println("Gallina " + getNombre()+ " esta poniendo hueos");
+    public void ponerHuevos(int numHuevos) {
+        System.out.println("Gallina " + getNombre()+ " ha puesto " + numHuevos+ " huevos.");
     }
 }

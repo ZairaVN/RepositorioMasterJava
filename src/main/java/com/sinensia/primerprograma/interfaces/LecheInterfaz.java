@@ -1,5 +1,8 @@
 package com.sinensia.primerprograma.interfaces;
 
-public interface LecheInterfaz {
+import com.sinensia.primerprograma.herencia.Oveja;
+import com.sinensia.primerprograma.herencia.Vaca;
+
+public sealed interface LecheInterfaz permits Vaca, Oveja {
     public void darLeche();
 }
