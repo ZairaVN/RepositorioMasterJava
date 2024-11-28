@@ -16,8 +16,8 @@ import java.time.LocalDate;
 public class Oveja extends Animal implements LecheInterfaz {
     private LocalDate fechaEsquilado;
 
-    public Oveja(int id, Tipo tipo, String nombre, int dia_insercion, double peso, Alimento idAlimento, Producto producto) {
-        super(id, tipo, nombre, dia_insercion, idAlimento, producto);
+    public Oveja(int id, Tipo tipo, String nombre, double peso, Alimento idAlimento, Producto producto) {
+        super(id, tipo, nombre, idAlimento, producto);
         this.fechaEsquilado = LocalDate.now().minusMonths(1);
     }
 

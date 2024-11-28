@@ -28,16 +28,14 @@ public abstract class Animal {
      * @param id       the id
      * @param tipo     the tipo
      * @param nombre   the nombre
-     * @param peso     the peso
      * @param alimento the alimento
      * @param producto the producto
      */
-    public Animal(int id, Tipo tipo, String nombre, double peso, Alimento alimento, Producto producto){
+    public Animal(int id, Tipo tipo, String nombre, Alimento alimento, Producto producto){
         this.id = id;
         this.tipo = tipo;
         this.nombre = nombre;
         this.dia_insercion = 0;
-        this.peso = peso;
         this.alimento = alimento;
         this.producto = producto;
         this.isAlimentado = false;

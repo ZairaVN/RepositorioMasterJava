@@ -1,10 +1,14 @@
 package com.sinensia.primerprograma;
 
+import com.sinensia.primerprograma.abstraccion.Animal;
 import com.sinensia.primerprograma.clases.Alimento;
 import com.sinensia.primerprograma.clases.Producir;
 import com.sinensia.primerprograma.clases.Producto;
+import com.sinensia.primerprograma.enumerado.Estacion;
+import com.sinensia.primerprograma.enumerado.Tipo;
 import com.sinensia.primerprograma.herencia.Cerdo;
 import com.sinensia.primerprograma.herencia.Gallina;
+import com.sinensia.primerprograma.herencia.Vaca;
 
 
 public class Main {
@@ -21,7 +25,9 @@ public class Main {
         Producto lana = new Producto(4, "Lana", 50, 0);
 
         //crear Animales
-//        Animal animal = new Gallina(1,)
+        Animal gallina = new Gallina(1, Tipo.GALLINA,"Lola", maiz, huevo);
+        Animal vaca = new Vaca(2, Tipo.VACA, "Milka", 650, pasto, leche);
+        Animal cerdo = new Cerdo(3, Tipo.CERDO, "Pepa", maiz, trufas, Estacion.VERANO);
 
 
 

@@ -7,8 +7,10 @@ import com.sinensia.primerprograma.enumerado.Tipo;
 import com.sinensia.primerprograma.interfaces.LecheInterfaz;
 
 public class Vaca extends Animal implements LecheInterfaz {
-    public Vaca(int id, Tipo tipo, String nombre, int dia_insercion, double peso, Alimento idAlimento, Producto producto) {
-        super(id, tipo, nombre, dia_insercion, idAlimento, producto);
+    private double peso;
+    public Vaca(int id, Tipo tipo, String nombre, double peso, Alimento idAlimento, Producto producto) {
+        super(id, tipo, nombre, idAlimento, producto);
+        this.peso = peso;
     }
 
     @Override

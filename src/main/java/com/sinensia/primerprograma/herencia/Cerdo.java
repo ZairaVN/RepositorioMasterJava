@@ -18,8 +18,8 @@ public class Cerdo extends Animal {
 
     private Estacion estacion;
 
-    public Cerdo(int id, Tipo tipo, String nombre, int dia_insercion, double peso, Alimento idAlimento, Producto producto, Estacion estacion) {
-        super(id, tipo, nombre, dia_insercion, idAlimento, producto);
+    public Cerdo(int id, Tipo tipo, String nombre, Alimento idAlimento, Producto producto, Estacion estacion) {
+        super(id, tipo, nombre, idAlimento, producto);
         this.estacion = estacion;
     }
 

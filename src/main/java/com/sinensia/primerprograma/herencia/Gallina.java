@@ -8,8 +8,8 @@ import com.sinensia.primerprograma.interfaces.GallinaInterfaz;
 
 public class Gallina extends Animal implements GallinaInterfaz {
 
-    public Gallina(int id, Tipo tipo, String nombre, int dia_insercion, double peso, Alimento idAlimento, Producto producto) {
-        super(id, tipo, nombre, dia_insercion, idAlimento, producto);
+    public Gallina(int id, Tipo tipo, String nombre, Alimento alimento, Producto producto) {
+        super(id, tipo, nombre,  alimento, producto);
     }
 
     @Override
