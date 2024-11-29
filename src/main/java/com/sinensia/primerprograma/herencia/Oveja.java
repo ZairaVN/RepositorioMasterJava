@@ -13,10 +13,10 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @ToString
-public class Oveja extends Animal implements LecheInterfaz {
+public final class Oveja extends Animal implements LecheInterfaz {
     private LocalDate fechaEsquilado;
 
-    public Oveja(int id, Tipo tipo, String nombre, double peso, Alimento idAlimento, Producto producto) {
+    public Oveja(int id, Tipo tipo, String nombre, Alimento idAlimento, Producto producto) {
         super(id, tipo, nombre, idAlimento, producto);
         this.fechaEsquilado = LocalDate.now().minusMonths(1);
     }

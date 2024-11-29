@@ -6,7 +6,7 @@ import com.sinensia.primerprograma.clases.Producto;
 import com.sinensia.primerprograma.enumerado.Tipo;
 import com.sinensia.primerprograma.interfaces.GallinaInterfaz;
 
-public class Gallina extends Animal implements GallinaInterfaz {
+public final class Gallina extends Animal implements GallinaInterfaz {
 
     public Gallina(int id, Tipo tipo, String nombre, Alimento alimento, Producto producto) {
         super(id, tipo, nombre,  alimento, producto);

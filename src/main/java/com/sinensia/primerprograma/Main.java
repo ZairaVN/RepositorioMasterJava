@@ -11,7 +11,15 @@ import com.sinensia.primerprograma.herencia.Gallina;
 import com.sinensia.primerprograma.herencia.Vaca;
 
 
+/**
+ * The type Main.
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         //crear Alimentos
         Alimento maiz = new Alimento(1, "Maiz", 0.5, 50);
@@ -25,12 +33,10 @@ public class Main {
         Producto lana = new Producto(4, "Lana", 50, 0);
 
         //crear Animales
-        Animal gallina = new Gallina(1, Tipo.GALLINA,"Lola", maiz, huevo);
+        Animal gallina = new Gallina(1, Tipo.GALLINA, "Lola", maiz, huevo);
         Animal vaca = new Vaca(2, Tipo.VACA, "Milka", 650, pasto, leche);
-        Animal cerdo = new Cerdo(3, Tipo.CERDO, "Pepa", maiz, trufas, Estacion.VERANO);
-
-
-
+        Animal cerdo = new Cerdo(3, Tipo.CERDO, "Pepa", trigo, trufas, Estacion.VERANO);
+        Animal oveja = new Oveja(4, Tipo.OVEJA, "Menina", pasto, lana);
 
 
     }

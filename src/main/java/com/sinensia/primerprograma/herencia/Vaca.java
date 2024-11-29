@@ -6,7 +6,7 @@ import com.sinensia.primerprograma.clases.Producto;
 import com.sinensia.primerprograma.enumerado.Tipo;
 import com.sinensia.primerprograma.interfaces.LecheInterfaz;
 
-public class Vaca extends Animal implements LecheInterfaz {
+public final class Vaca extends Animal implements LecheInterfaz {
     private double peso;
     public Vaca(int id, Tipo tipo, String nombre, double peso, Alimento idAlimento, Producto producto) {
         super(id, tipo, nombre, idAlimento, producto);

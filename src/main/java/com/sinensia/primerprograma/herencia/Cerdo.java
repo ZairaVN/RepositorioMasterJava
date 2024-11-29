@@ -14,7 +14,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @Builder
-public class Cerdo extends Animal {
+public final class Cerdo extends Animal {
 
     private Estacion estacion;
 

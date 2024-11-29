@@ -5,6 +5,8 @@ import com.sinensia.primerprograma.clases.Producto;
 import com.sinensia.primerprograma.enumerado.Tipo;
 import lombok.*;
 
+import java.util.Objects;
+
 /**
  * The type Animal.
  */
@@ -22,6 +24,7 @@ public abstract class Animal {
     private Producto producto;
     private boolean isAlimentado;
 
+
     /**
      * Instantiates a new Animal.
      *
@@ -31,7 +34,7 @@ public abstract class Animal {
      * @param alimento the alimento
      * @param producto the producto
      */
-    public Animal(int id, Tipo tipo, String nombre, Alimento alimento, Producto producto){
+    public Animal(int id, Tipo tipo, String nombre, Alimento alimento, Producto producto) {
         this.id = id;
         this.tipo = tipo;
         this.nombre = nombre;
@@ -47,7 +50,23 @@ public abstract class Animal {
     public abstract void hacerRuido();
 
 
-    public void alimentar(){
+    /**
+     * Alimentar.
+     */
+    public void alimentar() {
         System.out.println("El animal ha sido alimentado, ha comido 1 unidad de " + getAlimento().getNombreAlimento());
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
+        return id == animal.id && dia_insercion == animal.dia_insercion && Double.compare(peso, animal.peso) == 0 && isAlimentado == animal.isAlimentado && tipo == animal.tipo && Objects.equals(nombre, animal.nombre) && Objects.equals(alimento, animal.alimento) && Objects.equals(producto, animal.producto);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, tipo, nombre, dia_insercion, peso, alimento, producto, isAlimentado);
     }
 }
